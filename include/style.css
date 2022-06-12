@@ -288,7 +288,7 @@ footer {
 	}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 	}
 
 	header {
@@ -335,4 +335,7 @@ footer {
   section.project div.projimg-3 {
   	grid-column: 3 / span 2;
   }
+
+	div.next-project {
+		margin-top: 1rem;
 }
