@@ -262,11 +262,19 @@ footer {
 	h2 {
 	  font-size: 1.7rem;
   }
+
+	#horizontal-spacing-2 {
+	  height: 1rem;
+	}
 }
 
 @media (max-width: 926px) {
 	.logo {
 		height: 32px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
 	}
 
 	header {
@@ -296,16 +304,6 @@ footer {
 	section.work div.description {
 		grid-column: 1 / span 4;
 	}
-
-/*
-	section.project div.projdescription {
-		grid-column: 5 / span 6;
-	}
-
-	section.project div.projimg {
-		grid-column: 1 / span 4;
-	}
-*/
 
   section.project div.projdescription {
     grid-column: 1 / span 4;
