@@ -273,7 +273,7 @@ footer {
 		height: 32px;
 	}
 
-	h2 {
+	h2 h3 {
 		font-size: 1.5rem;
 	}
 
@@ -284,7 +284,7 @@ footer {
   }
 
 	nav a {
-		margin: 16px 0 0 24px;
+		margin: 8px 0 0 24px;
 	}
 
 	section {
