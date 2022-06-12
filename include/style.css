@@ -278,13 +278,13 @@ footer {
 	}
 
 	header {
-		height: 100px;
+		height: 80px;
 	  flex-direction: column;
-	  padding: 16px 0 32px 0;
+	  padding: 16px 0 24px 0;
   }
 
 	nav a {
-		margin: 8px 0 0 24px;
+		margin: 0 0 0 24px;
 	}
 
 	section {
