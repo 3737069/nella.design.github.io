@@ -259,8 +259,8 @@ footer {
 }
 
 @media (max-width: 1280px) {
-	h2 {
-	  font-size: 1.7rem;
+	h2 h3 {
+	  font-size: 1.5rem;
   }
 
 	#horizontal-spacing-2 {
