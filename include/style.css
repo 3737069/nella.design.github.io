@@ -259,8 +259,12 @@ footer {
 }
 
 @media (max-width: 1280px) {
-	h2 h3 {
-	  font-size: 1.5rem;
+	h2 {
+	  font-size: 2rem;
+  }
+
+	h3 {
+	  font-size: 2rem;
   }
 
 	#horizontal-spacing-2 {
@@ -273,14 +277,23 @@ footer {
 		height: 32px;
 	}
 
-	h2 h3 {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 2.5rem;
+	}
+
+	h3 {
 		font-size: 1.5rem;
 	}
 
 	header {
 		height: 80px;
 	  flex-direction: column;
-	  padding: 16px 0 24px 0;
+	  padding: 16px 0 16px 0;
   }
 
 	nav a {
@@ -289,7 +302,8 @@ footer {
 
 	section {
 		grid-template-columns: repeat(4, 1fr);
-		gap: 24px 24px;
+		margin: 24px 0 16px 0;
+		gap: 16px 16px;
 	}
 
 	section h2 {
