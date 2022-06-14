@@ -2,6 +2,7 @@ for (let el of document.querySelectorAll(".hover")) {
   let image = new Image();
   image.src = el.dataset.src;
   image.className = "followMouse";
+  image.style.width = `auto`;
 
   el.addEventListener("mouseover", (e) => {
     document.getElementById("container").append(image);
