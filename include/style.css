@@ -135,6 +135,11 @@ nav a {
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+/* Add padding to ensure space is present between carousel and Reflections section [KT] - 19June*/
+.main-gallery{
+	margin-bottom:10px;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .underline:hover::before{
     left: 0;
