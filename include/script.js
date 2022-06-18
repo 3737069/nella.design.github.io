@@ -12,7 +12,6 @@ function mediaQueryCheck(inputQuery) {
         document.getElementById("container").append(image);
         image.style.left = `${e.clientX * 1.1}px`;
         image.style.top = `${e.clientY * 1.05}}px`;
-        console.log("mouseover has been activate", e.clientX, e.clientY);
       });
 
       el.addEventListener("mouseout", (e) => {
@@ -25,7 +24,6 @@ function mediaQueryCheck(inputQuery) {
       if (image) {
         image.style.left = `${e.clientX * 1.1}px`;
         image.style.top = `${e.clientY * 1.05}px`;
-        console.log("mousemove has been activate", e.clientX, e.clientY);
       }
     });
   } else {
