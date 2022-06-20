@@ -33,28 +33,6 @@ header {
 	padding-bottom: 16px;
 }
 
-#container {
-  position: relative;
-  cursor: default;
-}
-.followMouse {
-  z-index: 2;
-  position: absolute;
-}
-
-/* img.mypic{
-	width: 9rem;
-	display: none;
-	position: absolute;
-	z-index: -1;
-	margin-top: -15%;
-}
-
-
-  span:hover + img.mypic{
-	display:block;
-} */
-
 h1 {
 	font-family: 'Space Mono', 'Helvetica', sans-serif;
 	font-size: 1.7rem;
@@ -135,11 +113,6 @@ nav a {
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Add padding to ensure space is present between carousel and Reflections section [KT] - 19June*/
-.main-gallery{
-	margin-bottom:10px;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .underline:hover::before{
     left: 0;
@@ -174,13 +147,24 @@ button {
 }
 */
 
-#horizontal-spacing-2 {
-  height: 2rem;
+/* mouseover */
+#container {
+  position: relative;
+  cursor: default;
+}
+.followMouse {
+  z-index: 2;
+  position: absolute;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+#mypic img {
+	width: 10px;
+	height: auto;
 }
 
 section {
@@ -238,11 +222,16 @@ div.next-project {
   justify-content: flex-end;
 }
 
+#horizontal-spacing-2 {
+  height: 2rem;
+}
+
 .divider {
 	height: 2px;
 	background-color: #0000FF;
 }
 
+/* footer */
 footer {
 	font-size: 0.7rem;
 	position: absolute;
@@ -293,7 +282,7 @@ footer {
 	}
 
 	h3 {
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 
 	header {
