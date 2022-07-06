@@ -295,6 +295,9 @@ footer {
 }
 
 @media (max-width: 926px) {
+	header nav a {
+		margin-left: 0.5rem;
+	}
 
 	h1 {
 		font-size: 1.5rem;
