@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono&display=swap');
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 html {
 	height: 100%;
 	font-size: 16px;
@@ -15,7 +23,8 @@ body {
 	font-size: 1rem;
 	line-height: 1.5;
 	margin: 0 auto 40px auto;
-	width: 80%;
+	padding-top: 96px;
+	width: 90%;
 }
 
 .logo {
@@ -24,13 +33,28 @@ body {
 
 header {
 	background-image: linear-gradient(to top, rgba(255,251,240,0), rgba(255,251,240,1));
-	height: 64px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	z-index: 10;
-	position: sticky;
-	padding-bottom: 16px;
+	font-family: 'Space Mono', 'Helvetica', sans-serif;
+	font-size: 1.2rem;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 6rem;
+}
+
+header h1 {
+	float: left;
+}
+
+header nav {
+	float: right;
+	margin-top: 0.5rem;
+}
+
+header nav a {
+	margin-left: 2rem;
 }
 
 h1 {
@@ -93,10 +117,6 @@ a {
 	margin: 0 0 0 0;
 }
 
-nav a {
-	margin: 0 0 0 24px;
-}
-
 .underline{
   position: relative;
   display: inline-block;
@@ -147,7 +167,7 @@ button {
 }
 */
 
-/* mouseover */
+/* mouseover image */
 #container {
   position: relative;
   cursor: default;
@@ -244,15 +264,22 @@ footer {
 	margin-top: 2.5rem;
 }
 
-
 /* media query */
 @media (max-width: 1728px) {
 	body {
 		width: 92%;
 	}
+
+	header {
+		padding: 1rem 4rem;
+	}
 }
 
 @media (max-width: 1280px) {
+  header {
+		padding: 1rem 3rem;
+	}
+
 	h2 {
 	  font-size: 2rem;
   }
@@ -268,9 +295,6 @@ footer {
 }
 
 @media (max-width: 926px) {
-	.logo {
-		height: 32px;
-	}
 
 	h1 {
 		font-size: 1.5rem;
@@ -286,14 +310,8 @@ footer {
 	}
 
 	header {
-		height: 80px;
-	  flex-direction: column;
-	  padding: 16px 0 16px 0;
+	  padding: 1rem 1.5rem;
   }
-
-	nav a {
-		margin: 0 0 0 24px;
-	}
 
 	section {
 		grid-template-columns: repeat(4, 1fr);
