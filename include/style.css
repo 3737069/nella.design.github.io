@@ -16,10 +16,10 @@ html {
 }
 
 body {
-	background: #FFFBF0;
+	background: #F4F2E8;
 	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-weight: 400;
-	color: #0000FF;
+	color: #252422;
 	font-size: 1rem;
 	line-height: 1.5;
 	margin: 0 auto 40px auto;
@@ -27,12 +27,12 @@ body {
 	width: 90%;
 }
 
-.logo {
-	height: 24px;
+svg:hover {
+  fill: #0000FF;
 }
 
 header {
-	background-image: linear-gradient(180deg, rgba(255,251,240,1) 0%, rgba(255,251,240,1) 75%, rgba(255,251,240,1) 76%, rgba(255,251,240,0) 100%);
+	background-image: linear-gradient(180deg, rgba(244,242,232,1) 0%, rgba(244,242,232,0) 100%);
 	z-index: 10;
 	font-family: 'Space Mono', 'Helvetica', sans-serif;
 	font-size: 1.2rem;
@@ -112,11 +112,17 @@ li {
 }
 
 a {
-	color: #0000FF;
+	color: #252422;
 	text-decoration: none;
 	margin: 0 0 0 0;
 }
 
+a:hover {
+  color: #0000FF;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+/*
 .underline{
   position: relative;
   display: inline-block;
@@ -140,7 +146,7 @@ a {
     width: 100%;
   }
 }
-
+*/
 /*
 button {
   padding: 8px 16px;
@@ -182,9 +188,8 @@ img {
   height: auto;
 }
 
-#mypic img {
-	width: 10px;
-	height: auto;
+.rounded-img {
+  border-radius: 20px;
 }
 
 section {
@@ -248,7 +253,7 @@ div.next-project {
 
 .divider {
 	height: 2px;
-	background-color: #0000FF;
+	background-color: #252422;
 }
 
 /* footer */
