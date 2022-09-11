@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+                  ██  ██
+███████   ███████ ██  ██ ███████
+██     ██ ██   ██ ██  ██      ██
+██     ██ ███████ ██  ██ ███████
+██     ██ ██      ██  ██ ██   ██
+██     ██ ███████ ██  ██ ███████
+
+-->
+
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Work – Nella</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono&display=swap');
+
+  body {
+    background: #F4F2E8;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #252422;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-family: 'Space Mono', 'Helvetica', sans-serif;
+    font-size: 27.5px;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+    line-height: 1.4;
+  }
+
+  p {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  #loginbutton {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 16px;
+    background-color: #F4F2E8;
+    color: #252422;
+    border: 2px solid #252422;
+    border-radius: 28px;
+  }
+
+  #loginbutton:hover {
+    background-color: #0000FF;
+    color: #F4F2E8;
+    border: 1.8px solid #0000FF;
+    transition-duration: 0.4s;
+  }
+
+  input[type=password] {
+    border-radius: 6px;
+    border: 0px solid;
+    background-color: rgba(37, 36, 34, 0.1);
+    padding: 12px 12px;
+    width: 240px;
+  }
+
+  #password {
+    font-size: 16px;
+  }
+
+  .box {
+    border-radius: 18px;
+    border: 2px solid #F4F2E8;
+    background: rgba(244, 242, 232, 1);
+    margin: auto;
+    padding: 32px;
+  }
+
+  .lightbox {
+    zoom: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 242, 232, 1);
+    text-align: center;
+    margin: auto;
+
+  }
+
+  div.horizontal {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  div.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #666563;
+    text-align: center;
+  }
+
+  ::-moz-placeholder {
+    color: #666563;
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    color: #666563;
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <div id="loginbox" class="lightbox">
+    <div class="horizontal">
+      <div class="vertical">
+        <div class="box">
+          <h1>🔒 This case study is password protected</h1><br>
+          <input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Type in secret phrase..." /> <br />
+          <button id="loginbutton" type="button">ENTER</button>
+          <p id="wrongPassword" style="display: none">Incorrect password</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+  <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+  <script type="text/javascript">
+    "use strict";
+
+
+    function loadPage(pwd) {
+
+      var hash = pwd;
+      hash = Sha1.hash(pwd);
+      var url = hash + "/index.html";
+
+      $.ajax({
+        url: url,
+        dataType: "html",
+        success: function(data) {
+
+          window.location = url;
+
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+
+
+          parent.location.hash = hash;
+
+          //$("#wrongPassword").show();
+          $("#password").attr("placeholder", "Incorrect password");
+          $("#password").val("");
+        }
+      });
+    }
+
+
+    $("#loginbutton").on("click", function() {
+      loadPage($("#password").val());
+    });
+    $("#password").keypress(function(e) {
+      if (e.which == 13) {
+
+        loadPage($("#password").val());
+      }
+    });
+    $("#password").focus();
+  </script>
+
+</body>
+
+</html>
