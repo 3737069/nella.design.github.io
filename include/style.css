@@ -124,6 +124,9 @@ a:hover {
   transition-timing-function: ease;
 }
 
+#logo {
+  padding-top: 2px;
+}
 
 button {
   margin: 3rem 0 0 0;
