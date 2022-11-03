@@ -22,9 +22,8 @@ body {
 	color: #252422;
 	font-size: 1rem;
 	line-height: 1.5;
-	margin: 0 auto 40px auto;
+	margin: 0 14rem 2.5rem 14rem;
 	padding-top: 96px;
-	width: 90%;
 }
 
 svg:hover {
@@ -41,7 +40,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1rem 6rem;
+	padding: 1rem 14rem;
 }
 
 header h1 {
@@ -154,12 +153,12 @@ button {
   transition-duration: 0.4s;
 }
 
-
 /* mouseover image */
 #container {
   position: relative;
   cursor: default;
 }
+
 .followMouse {
   z-index: 2;
   position: absolute;
@@ -241,31 +240,25 @@ div.next-project {
 
 /* footer */
 footer {
-	font-size: 0.7rem;
+	font-size: 12px;
 	position: absolute;
 	bottom: 16px;
 }
 
 .footr {
-	font-size: 0.7rem;
+	font-size: 12px;
 	padding-bottom: 16px;
 	margin-top: 2.5rem;
 }
 
 /* media query */
-@media (max-width: 1728px) {
-	body {
-		width: 92%;
+@media (max-width: 1600px) {
+  body {
+			margin: 0 8.5rem 2.5rem 8.5rem;
 	}
 
-	header {
-		padding: 1rem 4rem;
-	}
-}
-
-@media (max-width: 1512px) {
   header {
-		padding: 1rem 3rem;
+		padding: 1rem 8.5rem;
 	}
 
 	h2 {
@@ -282,7 +275,35 @@ footer {
 	}
 }
 
+@media (max-width: 1395px) {
+  body {
+			margin: 0 5rem 2.5rem 5rem;
+	}
+
+  header {
+		padding: 1rem 5rem;
+	}
+}
+
+@media (max-width: 1280px) {
+  body {
+			margin: 0 4rem 2.5rem 4rem;
+	}
+
+  header {
+		padding: 1rem 4rem;
+	}
+}
+
 @media (max-width: 926px) {
+  body {
+      margin: 0 16px 2rem 16px;
+  }
+
+  header {
+    padding: 16px 16px;
+  }
+
 	header nav a {
 		margin-left: 1.5rem;
 	}
