@@ -91,11 +91,19 @@ h6 {
 	font-weight: 400;
 	letter-spacing: 1px;
 	margin: 0 0 0 0px;
+  line-height: 1.6;
 }
 
 p {
 	margin-block-start: 0.5rem;
   margin: 0.5rem 0 1rem 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: #e3ddce;
 }
 
 ol {
@@ -125,6 +133,10 @@ a:hover {
 
 #logo {
   padding-top: 2px;
+}
+
+#hover-text:hover {
+  color: #252422;
 }
 
 button {
