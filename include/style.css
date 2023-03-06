@@ -253,13 +253,13 @@ div.next-project {
 }
 
 /* footer */
-.footr {
+footer {
 	font-size: 12px;
 	position: absolute;
 	bottom: 16px;
 }
 
-footer {
+.footr {
 	font-size: 12px;
 	padding-bottom: 16px;
 	margin-top: 2.5rem;
