@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
 
 * {
   -webkit-box-sizing: border-box;
@@ -12,18 +12,20 @@
 html {
 	height: 100%;
 	font-size: 16px;
+  scroll-behavior: smooth !important;
 	overflow-y:scroll;
 }
 
 body {
-	background: #F4F2E8;
+	background: #EAE9E1;
 	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-weight: 400;
 	color: #252422;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.4;
 	margin: 0 18rem 2.5rem 18rem;
 	padding-top: 96px;
+  cursor:url(../images/cursor.svg),auto;
 }
 
 svg:hover {
@@ -31,9 +33,9 @@ svg:hover {
 }
 
 header {
-	background-image: linear-gradient(180deg, rgba(244,242,232,1) 0%, rgba(244,242,232,0) 100%);
+  background-image: linear-gradient(180deg, rgba(234,233,225,1) 0%, rgba(241,240,234,0) 100%);
 	z-index: 10;
-	font-family: 'Space Mono', 'Helvetica', sans-serif;
+	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-size: 1.4rem;
 	overflow: hidden;
 	position: fixed;
@@ -57,26 +59,27 @@ header nav a {
 }
 
 h1 {
-	font-family: 'Space Mono', 'Helvetica', sans-serif;
-	font-size: 1.7rem;
-	font-weight: 400;
-  line-height: 1.4;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+  line-height: 1.2;
 	margin: 4px 0 0 0;
 }
 
 h2 {
-	font-family: 'Space Mono', 'Helvetica', sans-serif;
+	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-size: 2.8rem;
 	font-weight: 400;
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 
 h3 {
-	font-family: 'Space Mono', 'Helvetica', sans-serif;
-	font-size: 2.5rem;
-	font-weight: 400;
-	line-height: 1.3;
-  letter-spacing: 1px;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 2.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+  letter-spacing: -1px;
 	margin: 4px 0 16px 0;
 }
 
@@ -105,7 +108,7 @@ blockquote {
   margin: 1.5rem 0rem;
   padding: 1.5rem;
   border-radius: 20px;
-  background: #e3ddce;
+  background: rgba(255,255,255,0.3);
 }
 
 ol {
@@ -142,7 +145,7 @@ a:hover {
 }
 
 button {
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
   text-align: center;
   letter-spacing: 2px;
   text-decoration: none;
@@ -154,7 +157,7 @@ button {
 
 .pri-btn {
   padding: 12px 16px;
-  background-color: #F4F2E8;
+  background: none;
   color: #252422;
   border: 2px solid #252422;
   border-radius: 28px;
@@ -162,7 +165,7 @@ button {
 
 .pri-btn:hover {
   background-color: #0000FF;
-  color: #F4F2E8;
+  color: #EAE9E1;
   border: 2px solid #0000FF;
   transition-duration: 0.4s;
 }
@@ -170,7 +173,6 @@ button {
 /* mouseover image */
 #container {
   position: relative;
-  cursor: default;
 }
 
 .followMouse {
@@ -199,18 +201,33 @@ section h2 {
 	grid-column: 1 / span 9;
 }
 
-section.abt {
-	position: absolute;
-	bottom: 2.5rem;
+section.about {
+  position: relative;
 }
 
-section.work div.workimg {
-	grid-column: 1 / span 4;
-	width: 100%;
+section.about div.about-cta {
+  grid-column: 1 / span 9;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 2rem 0rem;
 }
 
-section.work div.description {
-	grid-column: 5 / span 6;
+section.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 24px;
+}
+
+section.work div.workcard {
+  border-radius: 20px;
+   background-color: rgba(255,255,255,0.3);
+   width: 100%;
+}
+
+section.work div.workcard-info {
+    padding: 1rem 1.5rem 1.5rem;
 }
 
 section.work img {
@@ -254,15 +271,9 @@ div.next-project {
 
 /* footer */
 footer {
-	font-size: 12px;
-	position: absolute;
-	bottom: 16px;
-}
-
-.footr {
-	font-size: 12px;
-	padding-bottom: 16px;
-	margin-top: 2.5rem;
+  font-size: 12px;
+  padding-bottom: 16px;
+  margin-top: 5rem;
 }
 
 /* media query */
@@ -358,9 +369,11 @@ footer {
 		top: 4rem;
 	}
 
-	section.work div.description {
-		grid-column: 1 / span 4;
-	}
+  section.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
 
   section.project div.projdescription {
     grid-column: 1 / span 4;
