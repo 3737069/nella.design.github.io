@@ -142,6 +142,7 @@ a:hover {
 
 #hover-text:hover {
   color: #252422;
+  cursor:url(../images/cursor.svg),auto;
 }
 
 button {
@@ -152,7 +153,7 @@ button {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .pri-btn {
@@ -197,20 +198,19 @@ section {
 	gap: 24px 24px;
 }
 
-section h2 {
-	grid-column: 1 / span 9;
-}
-
 section.about {
   position: relative;
+
 }
 
-section.about div.about-cta {
+section.about div {
   grid-column: 1 / span 9;
+}
+
+#work {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 2px;
-  margin: 2rem 0rem;
 }
 
 section.work {
@@ -254,10 +254,10 @@ section.project div.projimg-3 {
 	grid-column: 7 / span 6;
 }
 
-div.next-project {
-	margin-top: 2rem;
-	display: flex;
-  justify-content: flex-end;
+div.projoutro {
+	margin: 2rem 0rem;
+  display: flex;
+ justify-content: space-between;
 }
 
 #horizontal-spacing-2 {
@@ -364,10 +364,9 @@ footer {
 		grid-column: 1 / span 4;
 	}
 
-	section.abt {
-		position: absolute;
-		top: 4rem;
-	}
+  section.about div {
+    grid-column: 1 / span 4;
+  }
 
   section.work {
     display: flex;
@@ -391,6 +390,6 @@ footer {
   	grid-column: 1 / span 4;
   }
 
-	div.next-project {
+	div.projoutro {
 		margin-top: 1rem;
 }
