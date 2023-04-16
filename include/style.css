@@ -78,7 +78,7 @@ h3 {
 	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-size: 2.8rem;
 	font-weight: 600;
-	line-height: 1.2;
+	line-height: 1.1;
   letter-spacing: -1px;
 	margin: 4px 0 16px 0;
 }
@@ -87,7 +87,7 @@ h4 {
 	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 600;
-	margin: 1rem 0 1rem 0;
+	margin: 1rem 0 0.5rem 0;
 }
 
 h6 {
@@ -113,7 +113,7 @@ blockquote {
 
 ol {
 	padding-inline-start: 2.5rem;
-	margin: 0.5rem 0;
+	margin: 0.5rem 0rem 0.8rem 0rem;
 }
 
 li {
@@ -189,6 +189,10 @@ img {
 
 .sharp-img {
   border-radius: 0px;
+}
+
+video {
+  border-radius: 18px;
 }
 
 section {
