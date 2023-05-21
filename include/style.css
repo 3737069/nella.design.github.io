@@ -243,7 +243,7 @@ section.work img {
   margin-bottom: 0.5rem;
 }
 
-section.work h1, h6 {
+section.work h1, section.work h6 {
   padding-left: 1.5rem;
 }
 
@@ -384,7 +384,6 @@ footer {
   section.work {
     display: flex;
     flex-direction: column;
-    justify-content: left;
   }
 
   section.project div.projdescription {
