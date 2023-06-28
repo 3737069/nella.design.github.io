@@ -133,6 +133,7 @@ a:hover {
   color: #0000FF;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  cursor: pointer;
 }
 
 #logo {
@@ -141,6 +142,7 @@ a:hover {
 
 #hover-text:hover {
   color: #252422;
+  cursor: pointer;
 }
 
 button {
@@ -245,6 +247,7 @@ section.work img {
 
 section.work h1, section.work h6 {
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 section.project div.projtitle {
