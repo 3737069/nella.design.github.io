@@ -111,8 +111,13 @@ blockquote {
 }
 
 ol {
-	padding-inline-start: 2.5rem;
-	margin: 0.5rem 0rem 0.8rem 0rem;
+	padding-inline-start: 2rem;
+	margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+ul {
+	padding-inline-start: 2rem;
+	margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 li {
