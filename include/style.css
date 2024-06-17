@@ -2,414 +2,433 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 html {
-	height: 100%;
-	font-size: 16px;
-  scroll-behavior: smooth !important;
-	overflow-y:scroll;
+    height: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth !important;
+    overflow-y: scroll;
 }
 
 body {
-	background: #EAE9E1;
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-weight: 400;
-	color: #252422;
-	font-size: 1rem;
-	line-height: 1.4;
-	margin: 0 18rem 2.5rem 18rem;
-	padding-top: 96px;
+    background: #FFF;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #3E3E4A;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0 19rem 2.5rem 19rem;
+    padding-top: 96px;
 }
 
 svg:hover {
-  fill: #0000FF;
+    fill: #0000FF;
 }
 
 header {
-  background-image: linear-gradient(180deg, rgba(234,233,225,1) 0%, rgba(241,240,234,0) 100%);
-	z-index: 10;
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 1.4rem;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 1rem 18rem;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 1.4rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 19rem;
 }
 
 header h1 {
-	float: left;
+    float: left;
 }
 
 header nav {
-	float: right;
-	margin-top: 0.5rem;
+    float: right;
+    margin-top: 0.5rem;
 }
 
 header nav a {
-	margin-left: 2.5rem;
+    margin-left: 2.5rem;
 }
 
 h1 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 1.5rem;
-	font-weight: 600;
-  line-height: 1.2;
-	margin: 4px 0 0 0;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 4px 0 0 0;
 }
 
 h2 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 2.8rem;
-	font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -1px;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -1px;
 }
 
 h3 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 2.8rem;
-	font-weight: 600;
-	line-height: 1.1;
-  letter-spacing: -1px;
-	margin: 4px 0 16px 0;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 4px 0 16px 0;
 }
 
 h4 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin: 1rem 0 0.5rem 0;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+h5 {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8C8C9C;
+    margin: 0 0 0 0px;
 }
 
 h6 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-size: 0.7rem;
-	font-weight: 400;
-	letter-spacing: 1px;
-	margin: 0 0 0 0px;
-  line-height: 1.6;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #8C8C9C;
+    letter-spacing: 1px;
+    margin: 0 0 0 0px;
+    line-height: 1.6;
 }
 
 p {
-	margin-block-start: 0.5rem;
-  margin: 0.5rem 0 1rem 0;
+    margin-block-start: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
 blockquote {
-  margin: 1.5rem 0rem;
-  padding: 1.5rem;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.3);
+    margin: 1.5rem 0rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: #FAFAFA;
 }
 
 ol {
-	padding-inline-start: 2rem;
-	margin: 0.5rem 0rem 0.5rem 0rem;
+    padding-inline-start: 2rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 ul {
-	padding-inline-start: 2rem;
-	margin: 0.5rem 0rem 0.5rem 0rem;
+    padding-inline-start: 2rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 li {
-	font-family: 'Inter', 'Helvetica', sans-serif;
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1.5;
-	margin-bottom: 6px;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
 }
 
 a {
-	color: #252422;
-	text-decoration: none;
-	margin: 0 0 0 0;
+    color: #3E3E4A;
+    text-decoration: none;
+    margin: 0 0 0 0;
 }
 
 a:hover {
-  color: #0000FF;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  cursor: pointer;
+    color: #0000FF;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
 }
 
 #logo {
-  padding-top: 2px;
+    padding-top: 2px;
 }
 
 #hover-text:hover {
-  color: #252422;
-  cursor: pointer;
+    color: #3E3E4A;
+    cursor: pointer;
 }
 
 button {
-  margin: 2rem 0 0 0;
-  text-align: center;
-  letter-spacing: 2px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor:pointer;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .pri-btn {
-  padding: 12px 16px;
-  background: none;
-  color: #252422;
-  border: 2px solid #252422;
-  border-radius: 28px;
+    padding: 12px 16px;
+    background: none;
+    color: #3E3E4A;
+    border: 2px solid #3E3E4A;
+    border-radius: 28px;
 }
 
 .pri-btn:hover {
-  background-color: #0000FF;
-  color: #EAE9E1;
-  border: 2px solid #0000FF;
-  transition-duration: 0.4s;
+    background-color: #0000FF;
+    color: #FEFEFE;
+    border: 2px solid #0000FF;
+    transition-duration: 0.4s;
 }
 
 /* mouseover image */
 #container {
-  position: relative;
+    position: relative;
 }
 
 .followMouse {
-  z-index: 2;
-  position: absolute;
+    z-index: 2;
+    position: absolute;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  border-radius: 18px;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
 }
 
 .sharp-img {
-  border-radius: 0px;
+    border-radius: 0px;
 }
 
 video {
-  border-radius: 18px;
+    border-radius: 18px;
 }
 
 section {
-	margin: 40px 0 32px 0;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	gap: 24px 24px;
+    margin: 40px 0 32px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px 24px;
 }
 
 section.about {
-  position: relative;
+    position: relative;
 
 }
 
 section.about div {
-  grid-column: 1 / span 9;
+    grid-column: 1 / span 8;
 }
 
 #work {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 section.work {
-  display: flex;
+    display: flex;
 }
 
 section.work div.workcard {
-  border-radius: 20px;
-   background-color: rgba(255,255,255,0.3);
-   display: flex;
-   flex-direction: column;
-   width: 100%; /* 100% */
-   margin: 0 0.25rem;  /* margin between cards */
+    border-radius: 20px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    /* 100% */
+    margin: 0 0.25rem;
+    /* margin between cards */
 }
 
 .workcard-info {
-  flex: 1;
-  overflow: hidden;
+    flex: 1;
+    overflow: hidden;
 }
 
 .workcard-footer {
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: 0 0 20px 20px;
+    font-size: 12px;
+}
+
+.workcard:hover {
+    background-color: #F5F5F5 !important;
+    cursor: pointer;
 }
 
 section.work img {
-	max-width: 100%;
-  margin-bottom: 0.5rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
 }
 
-section.work h1, section.work h6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+section.work h1,
+section.work h6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 section.project div.projtitle {
-	grid-column: 1 / span 4;
+    grid-column: 1 / span 4;
 }
 
 section.project div.projdescription {
-	grid-column: 5 / span 8;
+    grid-column: 5 / span 8;
 }
 
 section.project div.projimg {
-	grid-column: 1 / span 12;
+    grid-column: 1 / span 12;
 }
 
 section.project div.projimg-2 {
-	grid-column: 1 / span 6;
+    grid-column: 1 / span 6;
 }
 
 section.project div.projimg-3 {
-	grid-column: 7 / span 6;
+    grid-column: 7 / span 6;
 }
 
 div.projoutro {
-	margin: 2rem 0rem;
-  display: flex;
- justify-content: space-between;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #horizontal-spacing-2 {
-  height: 2rem;
+    height: 2rem;
 }
 
 .divider {
-	height: 2px;
-	background-color: #252422;
+    height: 1px;
+    background-color: #D1D1DB;
 }
 
 /* footer */
 footer {
-  font-size: 12px;
-  padding-bottom: 16px;
-  margin-top: 5rem;
+    font-size: 12px;
+    padding-bottom: 16px;
+    margin-top: 5rem;
 }
 
 /* media query */
 @media (max-width: 1800px) {
-  body {
-			margin: 0 8.5rem 2.5rem 8.5rem;
-	}
+    body {
+        margin: 0 8.5rem 2.5rem 8.5rem;
+    }
 
-  header {
-		padding: 1rem 8.5rem;
-	}
+    header {
+        padding: 1rem 8.5rem;
+    }
 
-	h2 {
-	  font-size: 2.2rem;
-  }
+    h2 {
+        font-size: 2.2rem;
+    }
 
-	h3 {
-	  font-size: 2.2rem;
-		margin: 4px 0 8px 0;
-  }
+    h3 {
+        font-size: 2.2rem;
+        margin: 4px 0 8px 0;
+    }
 
-	#horizontal-spacing-2 {
-	  height: 1rem;
-	}
+    #horizontal-spacing-2 {
+        height: 1rem;
+    }
 }
 
 @media (max-width: 1395px) {
-  body {
-			margin: 0 6rem 2.5rem 6rem;
-	}
+    body {
+        margin: 0 7rem 2.5rem 7rem;
+    }
 
-  header {
-		padding: 1rem 5rem;
-	}
+    header {
+        padding: 1rem 6rem;
+    }
 }
 
 @media (max-width: 1280px) {
-  body {
-			margin: 0 3rem 2.5rem 3rem;
-	}
+    body {
+        margin: 0 4rem 2.5rem 4rem;
+    }
 
-  header {
-		padding: 1rem 3rem;
-	}
+    header {
+        padding: 1rem 4rem;
+    }
 }
 
 @media (max-width: 1000px) {
-  body {
-      margin: 0 20px 2rem 20px;
-  }
+    body {
+        margin: 0 20px 2rem 20px;
+    }
 
-  header {
-    padding: 20px 20px;
-  }
+    header {
+        padding: 20px 20px;
+    }
 
-	header nav a {
-		margin-left: 1.5rem;
-	}
+    header nav a {
+        margin-left: 1.5rem;
+    }
 
-	h1 {
-		font-size: 1.5rem;
-	}
+    h1 {
+        font-size: 1.5rem;
+    }
 
-	h2 {
-		font-size: 1.5rem;
-		margin-top: 2.5rem;
-	}
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
 
-	h3 {
-		font-size: 2rem;
-	}
+    h3 {
+        font-size: 2rem;
+    }
 
-  button {
-    margin: 2rem 0 1rem 0;
-  }
+    button {
+        margin: 2rem 0 1rem 0;
+    }
 
-	header {
-	  padding: 1rem 1.5rem;
-  }
+    header {
+        padding: 1rem 1.5rem;
+    }
 
-	section {
-		grid-template-columns: repeat(4, 1fr);
-		margin: 24px 0 16px 0;
-		gap: 12px 16px;
-	}
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 24px 0 16px 0;
+        gap: 12px 16px;
+    }
 
-	section h2 {
-		grid-column: 1 / span 4;
-	}
+    section h2 {
+        grid-column: 1 / span 4;
+    }
 
-  section.about div {
-    grid-column: 1 / span 4;
-  }
+    section.about div {
+        grid-column: 1 / span 4;
+    }
 
-  section.work {
-    display: flex;
-    flex-direction: column;
-  }
+    section.work {
+        display: flex;
+        flex-direction: column;
+    }
 
-  section.project div.projdescription {
-    grid-column: 1 / span 4;
-  }
+    section.project div.projdescription {
+        grid-column: 1 / span 4;
+    }
 
-   section.project div.projimg {
-    grid-column: 1 / span 4;
-  }
+    section.project div.projimg {
+        grid-column: 1 / span 4;
+    }
 
-  section.project div.projimg-2 {
-  	grid-column: 1 / span 4;
-  }
+    section.project div.projimg-2 {
+        grid-column: 1 / span 4;
+    }
 
-  section.project div.projimg-3 {
-  	grid-column: 1 / span 4;
-  }
+    section.project div.projimg-3 {
+        grid-column: 1 / span 4;
+    }
 
-	div.projoutro {
-		margin-top: 1rem;
-}
+    div.projoutro {
+        margin-top: 1rem;
+    }
