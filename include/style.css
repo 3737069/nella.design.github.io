@@ -23,7 +23,7 @@ body {
     color: #3E3E4A;
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0 19rem 2.5rem 19rem;
+    margin: 0 30rem 2.5rem 30rem;
     padding-top: 96px;
 }
 
@@ -41,7 +41,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 19rem;
+    padding: 1rem 30rem;
 }
 
 header h1 {
@@ -61,13 +61,13 @@ h1 {
     font-family: 'Inter', 'Helvetica', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.4;
     margin: 4px 0 0 0;
 }
 
 h2 {
     font-family: 'Inter', 'Helvetica', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -1px;
@@ -76,7 +76,7 @@ h2 {
 
 h3 {
     font-family: 'Inter', 'Helvetica', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: -1px;
@@ -87,7 +87,7 @@ h4 {
     font-family: 'Inter', 'Helvetica', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0;
 }
 
 h5 {
@@ -113,6 +113,10 @@ p {
     margin: 0.5rem 0 1rem 0;
 }
 
+mark {
+    background-color: #F0F0FF;
+}
+
 blockquote {
     margin: 1.5rem 0rem;
     padding: 1.5rem;
@@ -135,7 +139,11 @@ li {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 6px;
+    margin: 6px 0px;
+}
+
+li::marker {
+    color: #D1D1DB;
 }
 
 a {
@@ -207,6 +215,10 @@ img {
     border-radius: 0px;
 }
 
+div.projimg {
+    margin-top: 2rem;
+}
+
 video {
     border-radius: 18px;
 }
@@ -215,7 +227,7 @@ section {
     margin: 40px 0 32px 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 24px 24px;
+    gap: 28px 24px;
 }
 
 section.about {
@@ -235,18 +247,23 @@ section.about div {
 
 section.work {
     display: flex;
+    flex-wrap: wrap;
 }
 
 section.work div.workcard {
     border-radius: 20px;
     background-color: #FAFAFA;
-    display: flex;
     flex-direction: column;
+    flex: 0 0 calc(50% - 24px);
+    /* Each card takes 50% of the width minus the gap */
     cursor: pointer;
     width: 100%;
     /* 100% */
     margin: 0 0.25rem;
     /* margin between cards */
+    transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+    /* Transition for smooth fading */
+
 }
 
 .workcard-info {
@@ -277,11 +294,12 @@ section.work h6 {
 }
 
 section.project div.projtitle {
-    grid-column: 1 / span 4;
+    /**maybe dontneed**/
+    grid-column: 1 / span 12;
 }
 
 section.project div.projdescription {
-    grid-column: 5 / span 8;
+    grid-column: 1 / span 12;
 }
 
 section.project div.projimg {
@@ -303,7 +321,7 @@ div.projoutro {
 }
 
 #horizontal-spacing-2 {
-    height: 1.7rem;
+    height: 0.6rem;
 }
 
 .divider {
@@ -315,17 +333,17 @@ div.projoutro {
 footer {
     font-size: 12px;
     padding-bottom: 16px;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 /* media query */
 @media (max-width: 1800px) {
     body {
-        margin: 0 9rem 2.5rem 9rem;
+        margin: 0 18rem 2.5rem 18rem;
     }
 
     header {
-        padding: 1rem 8.5rem;
+        padding: 1rem 18rem;
     }
 
     h2 {
@@ -338,32 +356,29 @@ footer {
     }
 
     #horizontal-spacing-2 {
-        height: 1rem;
+        height: 0.6rem;
     }
 }
 
 @media (max-width: 1395px) {
     body {
-        margin: 0 8rem 2.5rem 8rem;
+        margin: 0 16rem 2.5rem 16rem;
     }
 
     header {
-        padding: 1rem 6rem;
+        padding: 1rem 16rem;
     }
 }
 
 @media (max-width: 1280px) {
     body {
-        margin: 0 5rem 2.5rem 5rem;
+        margin: 0 12rem 2.5rem 12rem;
     }
 
     header {
-        padding: 1rem 5rem;
+        padding: 1rem 12rem;
     }
 
-    #horizontal-spacing-2 {
-        height: 0.6rem;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -417,14 +432,6 @@ footer {
     section.work {
         display: flex;
         flex-direction: column;
-    }
-
-    section.project div.projdescription {
-        grid-column: 1 / span 4;
-    }
-
-    section.project div.projimg {
-        grid-column: 1 / span 4;
     }
 
     section.project div.projimg-2 {
