@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 * {
     -webkit-box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
     color: #3E3E4A;
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0 30rem 2.5rem 30rem;
+    margin: 0 32rem 2.5rem 32rem;
     padding-top: 96px;
 }
 
@@ -32,29 +32,30 @@ svg:hover {
 }
 
 header {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 10;
     font-family: 'Inter', 'Helvetica', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 30rem;
-}
-
-header h1 {
-    float: left;
+    padding: 1rem 32rem;
 }
 
 header nav {
-    float: right;
-    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(40px);
+    float: none;
+    margin: 0.5rem 10rem;
+    padding: 1rem;
+    border: 1px solid #FFF;
+    border-radius: 100rem;
+    text-align: center;
 }
 
 header nav a {
-    margin-left: 2.5rem;
+    margin: 1rem;
 }
 
 h1 {
@@ -114,7 +115,8 @@ p {
 }
 
 mark {
-    background-color: #F0F0FF;
+    background-color: #FFF;
+    font-family: 'Roboto Serif', 'serif';
 }
 
 blockquote {
@@ -157,10 +159,6 @@ a:hover {
     transition-duration: 0.3s;
     transition-timing-function: ease;
     cursor: pointer;
-}
-
-#logo {
-    padding-top: 2px;
 }
 
 #hover-text:hover {
@@ -223,6 +221,14 @@ video {
     border-radius: 18px;
 }
 
+.warning-content {
+  top:25%;
+  width:100%;
+  height:300px;
+  text-align:center;
+
+}
+
 section {
     margin: 40px 0 32px 0;
     display: grid;
@@ -232,7 +238,6 @@ section {
 
 section.about {
     position: relative;
-
 }
 
 section.about div {
@@ -280,6 +285,11 @@ section.work div.workcard {
 .workcard:hover {
     background-color: #F5F5F5 !important;
     cursor: pointer;
+}
+
+.coming-soon:hover {
+    background-color: #FAFAFA !important;
+    cursor: default !important;
 }
 
 section.work img {
@@ -339,11 +349,11 @@ footer {
 /* media query */
 @media (max-width: 1800px) {
     body {
-        margin: 0 18rem 2.5rem 18rem;
+        margin: 0 20rem 2.5rem 20rem;
     }
 
     header {
-        padding: 1rem 18rem;
+        padding: 1rem 20rem;
     }
 
     h2 {
@@ -368,6 +378,7 @@ footer {
     header {
         padding: 1rem 16rem;
     }
+
 }
 
 @media (max-width: 1280px) {
@@ -390,8 +401,12 @@ footer {
         padding: 20px 20px;
     }
 
+    header nav {
+        margin: 0.5rem 3rem;
+    }
+
     header nav a {
-        margin-left: 1.5rem;
+        margin: 1.5rem;
     }
 
     h1 {
