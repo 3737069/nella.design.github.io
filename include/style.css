@@ -402,7 +402,7 @@ footer {
     }
 
     header nav {
-        margin: 0.5rem 3rem;
+        margin: 0.5rem 1rem;
     }
 
     header nav a {
@@ -424,10 +424,6 @@ footer {
 
     button {
         margin: 2rem 0 1rem 0;
-    }
-
-    header {
-        padding: 1rem 1.5rem;
     }
 
     section {
