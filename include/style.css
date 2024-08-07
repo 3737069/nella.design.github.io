@@ -45,6 +45,7 @@ header {
 
 header nav {
     background-color: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(40px)!important;
     backdrop-filter: blur(40px);
     float: none;
     margin: 0.5rem 10rem;
