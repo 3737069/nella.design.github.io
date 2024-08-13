@@ -24,7 +24,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0 32rem 2.5rem 32rem;
-    padding-top: 96px;
+    padding-top: 3rem;
 }
 
 svg:hover {
@@ -35,28 +35,20 @@ header {
     z-index: 10;
     font-family: 'Inter', 'Helvetica', sans-serif;
     font-size: 1rem;
-    overflow: hidden;
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 1rem 32rem;
 }
 
 header nav {
     background-color: rgba(255, 255, 255, 0.75);
     -webkit-backdrop-filter: blur(40px)!important;
     backdrop-filter: blur(40px);
-    float: none;
-    margin: 0.5rem 10rem;
-    padding: 1rem;
-    border: 1px solid #FFF;
     border-radius: 100rem;
-    text-align: center;
-}
-
-header nav a {
-    margin: 1rem;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 h1 {
@@ -64,16 +56,7 @@ h1 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
-    margin: 4px 0 0 0;
-}
-
-h2 {
-    font-family: 'Inter', 'Helvetica', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: -1px;
-    margin: 0px;
+    margin: 0;
 }
 
 h3 {
@@ -102,11 +85,11 @@ h5 {
 
 h6 {
     font-family: 'Inter', 'Helvetica', sans-serif;
-    font-size: 0.7rem;
+    font-size: 12px;
     font-weight: 600;
     color: #8C8C9C;
     letter-spacing: 1px;
-    margin: 0 0 0 0px;
+    margin: 0 0 4px 0;
     line-height: 1.6;
 }
 
@@ -118,6 +101,10 @@ p {
 mark {
     background-color: #FFF;
     font-family: 'Roboto Serif', 'serif';
+}
+
+iconify-icon {
+    margin-bottom: -1px;
 }
 
 blockquote {
@@ -193,15 +180,25 @@ button {
     transition-duration: 0.4s;
 }
 
-/* mouseover image */
-#container {
-    position: relative;
-    padding: 24px 0px 16px 0px;
+details {
+    padding: 0.5rem 0rem;
 }
 
-.followMouse {
-    z-index: 2;
-    position: absolute;
+summary {
+  list-style-position: outside;
+  list-style-type: '+';
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+details[open] > summary {
+  list-style-type: '-';
+}
+
+.header-pic img {
+    border-radius: 100px;
+    width: 3rem;
+    margin-right: 1.2rem;
 }
 
 img {
@@ -231,7 +228,7 @@ video {
 }
 
 section {
-    margin: 40px 0 32px 0;
+    margin: 32px 0 32px 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 28px 24px;
@@ -242,13 +239,15 @@ section.about {
 }
 
 section.about div {
-    grid-column: 1 / span 8;
+    grid-column: 1 / span 9;
 }
 
 #work {
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: 600;
+    color: #8C8C9C;
     letter-spacing: 2px;
+    margin-bottom: -12px;
 }
 
 section.work {
@@ -331,8 +330,11 @@ div.projoutro {
     justify-content: space-between;
 }
 
+#horizontal-spacing-1 {
+    height: 2rem;
+}
 #horizontal-spacing-2 {
-    height: 0.6rem;
+    height: 0.5rem;
 }
 
 .divider {
@@ -351,10 +353,6 @@ footer {
 @media (max-width: 1800px) {
     body {
         margin: 0 20rem 2.5rem 20rem;
-    }
-
-    header {
-        padding: 1rem 20rem;
     }
 
     h2 {
@@ -376,10 +374,6 @@ footer {
         margin: 0 16rem 2.5rem 16rem;
     }
 
-    header {
-        padding: 1rem 16rem;
-    }
-
 }
 
 @media (max-width: 1280px) {
@@ -387,27 +381,11 @@ footer {
         margin: 0 12rem 2.5rem 12rem;
     }
 
-    header {
-        padding: 1rem 12rem;
-    }
-
 }
 
 @media (max-width: 1000px) {
     body {
         margin: 0 20px 2rem 20px;
-    }
-
-    header {
-        padding: 20px 20px;
-    }
-
-    header nav {
-        margin: 0.5rem 1rem;
-    }
-
-    header nav a {
-        margin: 1.5rem;
     }
 
     h1 {
@@ -456,8 +434,4 @@ footer {
 
     div.projoutro {
         margin-top: 1rem;
-    }
-
-    #container {
-        padding: 8px 0px 8px 0px;
     }
