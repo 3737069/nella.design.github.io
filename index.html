@@ -1,117 +1,173 @@
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width; initial-scale=1">
+<!doctype html>
+<meta name="viewport" content="width=device-width; initial-scale=1" />
 <html lang="en">
+    <head>
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Nella Wong</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="include/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    </head>
 
-<head>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Nella Wong</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="include/style.css" rel="stylesheet" type="text/css">
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-</head>
+    <body>
+        <!-- nav -->
+        <header>
+            <nav>
+                <a href="index.html">
+                    <div class="header-pic">
+                        <img src="images/mypic2.jpg" alt="Home" />
+                    </div>
+                </a>
+                <div>
+                    Nella Wong<br />
+                    Currently freelancing
+                </div>
+            </nav>
+        </header>
 
-<body>
+        <!-- about section -->
+        <section class="about">
+            <div>
+                <h1>
+                    A multi-faceted designer focusing on UI/UX — I design with
+                    intention and enjoy working on projects that make me feel
+                    like I can move mountains by pushing pixels.<br />
+                </h1>
 
-    <!-- nav -->
-    <header>
-        <nav>
-            <a href="index.html">
-            <div class="header-pic"><img src="images/mypic2.jpg" alt="Home"></div>
-            </a>
-            Nella Wong
-        </nav>
-    </header>
+                <details>
+                    <summary>More about me</summary>
+                    <p>
+                        Previously: Brand Experience Designer @
+                        <a href="https://www.kenvue.com/">Kenvue</a> and Digital
+                        Experience Designer @
+                        <a href="https://www.jnj.com/">Johnson & Johnson</a>
+                    </p>
+                    <p>
+                        When I'm not staring at a screen, I run/do yoga/make my
+                        own jewelry.
+                    </p>
+                </details>
 
-    <!-- about section -->
-    <section class="about">
-        <div>
-            <h1>
-                A multi-faceted designer focusing on UI/UX — I design with intention and enjoy working on projects that make me feel like I can move mountains by pushing pixels.<br>
-            </h1>
+                <!-- spacing -->
+                <div id="horizontal-spacing-1"></div>
+                <div id="horizontal-spacing-2"></div>
 
-            <details>
-              <summary>More about me</summary>
-              Currently freelancing. Previously: Brand Experience Designer @ <a href="https://www.kenvue.com/">Kenvue</a> and Digital Experience Designer @ <a href="https://www.jnj.com/">Johnson & Johnson</a> <br> <br>
-              When I'm not staring at a screen, I run/do yoga/make my own jewelry.
-            </details>
-
-            <!-- spacing -->
-            <div id="horizontal-spacing-1"></div><div id="horizontal-spacing-2"></div>
-
-            <div id="work">SELECTED WORK</div>
-        </div>
-    </section>
-
-    <!-- work section -->
-    <section class="work">
-
-        <div class="workcard" onclick="window.location.href='protected-jj-trumatch.html'">
-            <div class="workcard-info">
-                <img src="images/jj-trumatch-1.png" alt="">
-                <h6>UI/UX</h6>
-                <h1>Enabling healthcare providers in China to order personalized medical devices</h1>
+                <div id="work">Selected work</div>
             </div>
-            <div class="workcard-footer">
-                        <iconify-icon inline icon="carbon:locked"></iconify-icon>
-                        Password protected
-            </div>
-        </div>
-        <div class="workcard" onclick="window.location.href='jj-myacuvue-membership.html'">
-            <div class="workcard-info">
-                <img src="images/jj-math-1.png" alt="">
-                <h6>UI/UX</h6>
-                <h1>A fresh new look and membership experience for MyACUVUE® Thailand</h1>
-            </div>
-            <div class="workcard-footer">
-            </div>
-        </div>
+        </section>
 
-        <div class="workcard" onclick="window.location.href='aqui-wfh-stickers.html'">
-            <div class="workcard-info">
-                <img src="images/aqui-wfh-stickers-1.png" alt="">
-                <h6>ILLUSTRATION</h6>
-                <h1>A fun and expressive way for the Aquí team to communicate while working remotely</h1>
+        <!-- work section -->
+        <section class="work">
+            <div
+                class="workcard"
+                onclick="window.location.href='protected-jj-trumatch.html'"
+            >
+                <div class="workcard-info">
+                    <img src="images/jj-trumatch-1.png" alt="" />
+                    <h6>UI/UX</h6>
+                    <h1>
+                        Enabling healthcare providers in China to order
+                        personalized medical devices
+                    </h1>
+                </div>
+                <div class="workcard-footer">
+                    <iconify-icon inline icon="carbon:locked"></iconify-icon>
+                    Password protected
+                </div>
             </div>
-            <div class="workcard-footer">
+            <div
+                class="workcard"
+                onclick="window.location.href='jj-myacuvue-membership.html'"
+            >
+                <div class="workcard-info">
+                    <img src="images/jj-math-1.png" alt="" />
+                    <h6>UI/UX</h6>
+                    <h1>
+                        A fresh new look and membership experience for
+                        MyACUVUE® Thailand
+                    </h1>
+                </div>
+                <div class="workcard-footer"></div>
             </div>
-        </div>
 
+            <div
+                class="workcard"
+                onclick="window.location.href='kvue-ntg-brand.html'"
+            >
+                <div class="workcard-info">
+                    <img src="images/kvue-ntg-brand-1.png" alt="" />
+                    <h6>BRAND & IDENTITY</h6>
+                    <h1>
+                        Developing distinctive brand assets for Neutrogena®
+                    </h1>
+                </div>
+                <div class="workcard-footer"></div>
+            </div>
+
+            <div
+                class="workcard"
+                onclick="window.location.href='aqui-wfh-stickers.html'"
+            >
+                <div class="workcard-info">
+                    <img src="images/aqui-wfh-stickers-1.png" alt="" />
+                    <h6>ILLUSTRATION</h6>
+                    <h1>
+                        A fun and expressive way for the Aquí team to
+                        communicate while working remotely
+                    </h1>
+                </div>
+                <div class="workcard-footer"></div>
+            </div>
+
+            <!-- COMING SOON
         <div class="workcard coming-soon"">
-            <div class="workcard-info">
-                <img src="images/comingsoon.png" alt="">
-                <h6>BRAND & IDENTITY</h6>
-                <h1>Creating a visual system for Neutrogena's new Point of Difference</h1>
+                    <div class="workcard-info">
+                        <img src="images/comingsoon.png" alt="">
+                        <h6>UI/UX</h6>
+                        <h1>Improving the B2B purchase experience</h1>
+                    </div>
+                    <div class="workcard-footer">
+                    </div>
+                </div> -->
+
+            <!-- spacing2 -->
+            <div id="horizontal-spacing-2"></div>
+        </section>
+
+        <!-- contact me section -->
+        <section class="about">
+            <div id="work">Contact</div>
+            <div>
+                <h1>
+                    Open to new opportunities, say hi at <br />
+                    <iconify-icon inline icon="carbon:email"></iconify-icon>
+                    <a href="mailto:nellawong97@gmail.com"
+                        >nellawong97@gmail.com</a
+                    >
+                    /
+                    <iconify-icon
+                        inline
+                        icon="carbon:logo-linkedin"
+                    ></iconify-icon>
+                    <a
+                        href="https://www.linkedin.com/in/nellawong/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                </h1>
             </div>
-            <div class="workcard-footer">
-            </div>
-        </div>
+        </section>
+
         <!-- spacing2 -->
-		<div id="horizontal-spacing-2"> </div>
-    </section>
+        <div id="horizontal-spacing-2"></div>
 
-    <!-- contact me section -->
-    <section class="about">
-        <div id="work">CONTACT</div>
-        <div>
-            <h1>
-                Open to new opportunities, say hi at <br>
-                <a href="mailto:nellawong97@gmail.com"><iconify-icon inline icon="carbon:email"></iconify-icon> nellawong97@gmail.com</a> / <a href="https://www.linkedin.com/in/nellawong/" target="_blank">
-                                            <iconify-icon inline icon="carbon:logo-linkedin"></iconify-icon>
-                                            LinkedIn</a>
-            </h1>
-        </div>
-    </section>
-
-
-    <!-- spacing2 -->
-		<div id="horizontal-spacing-2"> </div>
-
-    <!-- footer -->
-    <footer>
-        © 2024 Nella Wong
-    </footer>
-    <script src="include/script.js"></script>
-</body>
-
+        <!-- footer -->
+        <footer>© 2024 Nella Wong</footer>
+        <script src="include/script.js"></script>
+    </body>
 </html>
