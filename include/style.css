@@ -407,13 +407,6 @@ footer {
 }
 
 /* media query */
-@media (max-width: 1800px) {
-
-    #horizontal-spacing-2 {
-        height: 0.6rem;
-    }
-}
-
 @media (max-width: 1000px) {
 
 .container {
@@ -441,4 +434,10 @@ section.project div.projimg-3 {
 
 div.projoutro {
     margin-top: 1rem;
+}
+
+.tooltip {
+    top: -100%; 
+    left: 40%;
+    transform: translateX(-50%);
 }
