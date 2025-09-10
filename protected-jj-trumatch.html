@@ -18,22 +18,21 @@
         </head>
 
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono&display=swap");
-
+            @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
             body {
                 background: #fafafa;
                 font-family: "Inter", "Helvetica", sans-serif;
                 font-weight: 400;
-                color: #3e3e4a;
+                color: #464656;
                 font-size: 16px;
                 line-height: 1.5;
             }
 
             h1 {
                 font-family: "Inter", "Helvetica", sans-serif;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: 400;
-                line-height: 1.4;
+                margin: 0;
             }
 
             p {
@@ -43,42 +42,42 @@
             }
 
             a {
-                color: #3e3e4a;
+                color: #464656;
                 text-decoration: none;
                 margin: 0 0 0 0;
             }
 
             #loginbutton {
-                font-family: "Inter", "Helvetica", sans-serif;
-                font-size: 14px;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 1rem;
+                padding: 12px 24px;
+                border: none;
+                outline: none;
+                background-color: #464656;
+                color: #fff;
+                border-radius: 100px;
                 font-weight: 600;
-                letter-spacing: 2px;
-                padding: 10px 16px;
-                background-color: #fafafa;
-                color: #3e3e4a;
-                border: 1px solid #3e3e4a;
-                border-radius: 28px;
+                cursor: pointer;
+                transition: all 0.25s ease-out;
             }
 
             #loginbutton:hover {
-                background-color: #0000ff;
-                color: #f4f2e8;
-                border: 1.8px solid #0000ff;
-                transition-duration: 0.4s;
-                cursor: pointer;
+                transform: translateY(-2px);
             }
 
             #back-btn {
                 font-family: "Inter", "Helvetica", sans-serif;
-                font-size: 14px;
-                font-weight: 600;
-                letter-spacing: 2px;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #464656;
+                margin-bottom: 2rem;
                 border: 0px;
                 background: none;
             }
 
             #back-btn:hover {
-                color: #0000ff;
+                color: #707187;
                 transition-duration: 0.4s;
                 cursor: pointer;
             }
@@ -86,7 +85,7 @@
             input[type="password"] {
                 border-radius: 6px;
                 border: 0px solid;
-                background-color: rgba(37, 36, 34, 0.1);
+                background-color: rgba(238, 237, 241, 1);
                 padding: 12px 12px;
                 width: 240px;
             }
@@ -128,17 +127,17 @@
             }
 
             ::-webkit-input-placeholder {
-                color: #666563;
+                color: #8e8fa2;
                 text-align: center;
             }
 
             ::-moz-placeholder {
-                color: #666563;
+                color: #8e8fa2;
                 text-align: center;
             }
 
             :-ms-input-placeholder {
-                color: #666563;
+                color: #8e8fa2;
                 text-align: center;
             }
         </style>
@@ -148,6 +147,13 @@
                 <div class="horizontal">
                     <div class="vertical">
                         <div class="box">
+                            <button id="back-btn" onclick="history.back()">
+                                <iconify-icon
+                                    inline
+                                    icon="carbon:arrow-left"
+                                ></iconify-icon>
+                                Go back
+                            </button>
                             <h1>
                                 <iconify-icon
                                     inline
@@ -164,13 +170,11 @@
                             />
                             <br />
                             <button id="loginbutton" type="button">
-                                CONFIRM
+                                Confirm
                             </button>
                             <br />
                             <br />
-                            <button id="back-btn" onclick="history.back()">
-                                GO BACK
-                            </button>
+
                             <p id="wrongPassword" style="display: none">
                                 Incorrect password
                             </p>
