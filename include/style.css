@@ -324,6 +324,7 @@ section.work div.workcard {
 }
 
 .workcard-info {
+    position: relative; /* makes it the positioning parent */
     flex: 1;
     overflow: hidden;
     border-radius: 20px; /* matches your existing rounded corners */
@@ -339,9 +340,15 @@ section.work div.workcard {
 }
 
 .workcard-footer {
-    padding: 0.5rem 0 0 0;
-    border-radius: 0 0 20px 20px;
-    font-size: 12px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #707187;
+    padding: 4px 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px; /* space between icon and text */
 }
 
 .workcard:hover {
@@ -352,7 +359,7 @@ section.work img {
     max-width: 100%;
 }
 
-section.work h1 {
+section.work p {
     margin-top: 1rem;
 }
 
@@ -436,8 +443,6 @@ div.projoutro {
     margin-top: 1rem;
 }
 
-.tooltip {
-    top: -100%; 
-    left: 40%;
-    transform: translateX(-50%);
+.contact-label {
+    width: 100px; /* Fixed width ensures links start at same position */
 }
