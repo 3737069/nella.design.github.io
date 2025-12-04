@@ -1,6 +1,6 @@
 //copy to clipboard//
 function copyEmail(element) {
-  const email = "nellawong97@gmail.com";
+  const email = "nellawongly@gmail.com";
   const tooltip = element.nextElementSibling;
 
   navigator.clipboard
